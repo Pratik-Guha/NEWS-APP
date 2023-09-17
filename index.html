@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat&family=Josefin+Sans&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <!-- <link rel="stylesheet" media=" screen and (max-width:634px)" href="/news_phone.css" type="text/css" /> -->
+  <title>News App</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="main-nav container flex">
+      <a href="#company-logo" id="company-logo">
+        <img src="/apple-touch-icon.png" alt="company-logo">
+      </a>
+      <div class="nav-links">
+        <ul class="flex">
+          <a href="#Home">
+            <li class="hover-link nav-item" id="Home" onclick="reload()">Home</li>
+          </a>
+          <li class="hover-link nav-item" id="sports" onclick="onNavitemclic('sports')">Sports</li>
+          <li class="hover-link nav-item" id="politics" onclick="onNavitemclic('politics')">Politics</li>
+          <li class="hover-link nav-item" id="public-finance" onclick="onNavitemclic('public-finance')">Publics finace
+          </li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" placeholder="search here" spellcheck="false" class="news-input" id="search-text">
+        <button class="search-button" id="search-button"><img src="search.png" alt=""></button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="cards-container container2 flex" id="cards-container">
+
+    </div>
+  </main>
+  <template id="news-template">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+      </div>
+      <div class="card-content">
+        <h3 class="news-title" id="news-title">This is the title</h3>
+        <h6 class="news-source" id="news-source">Lorem ipsum dolor sit.</h6>
+        <p class="news-descript" id="news-descript">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Iste culpa quisquam perferendis odio numquam, laborum aut accusamus cupiditate eius ducimus?</p>
+      </div>
+    </div>
+  </template>
+  <script src="/script.js"></script>
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
